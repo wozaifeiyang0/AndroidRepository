@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<configuration>
+	<map initialextent="12926366.069 4825308.403 12978687.528 4877696.008">
+        <basemaps>
+            <layer label="彩色版" type="tiled" icon="com.esri.android.viewer.street_map.jpg" visible="true" url="http://cache1.arcgisonline.cn/arcgis/rest/services/ChinaOnlineCommunity/MapServer"/>
+            <layer label="灰色版" type="tiled" icon="com.esri.android.viewer.topographic_map.jpg" url="http://cache1.arcgisonline.cn/arcgis/rest/services/ChinaOnlineStreetGray/MapServer"/>
+            <layer label="暖色版" type="tiled" icon="com.esri.android.viewer.imagery.jpg"    url="http://cache1.arcgisonline.cn/arcgis/rest/services/ChinaOnlineStreetWarm/MapServer"/>
+            <layer label="暖色版" type="local" icon="com.esri.android.viewer.imagery.jpg"  url="BeiJing/Layers"/>
+        </basemaps>
+        <operationallayers>
+        	<layer label="家庭收入专题图层" type="tiled"  visible="false" alpha="0.5" url="http://server.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Median_Household_Income/MapServer"/>
+        	<layer label="人口密度专题图层" type="dynamic"  visible="false" alpha="0.5" url="http://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Population_Density/MapServer"/>
+        	<layer label="失业率专题图层" type="dynamic"  visible="false" alpha="0.5" url="http://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Unemployment_Rate/MapServer"/>
+        	<layer label="GraphicsLayer图层" type="graphic"  visible="false" alpha="0.5" url=""/>
+<!--             <layer label="离线数据点图层" type="offline" visible="false" alpha="0.8" url="ArcGIS/offline/data/offline.geodatabase;points"/> -->
+<!--             <layer label="离线数据面图层" type="offline" visible="false" alpha="0.8" url="ArcGIS/offline/data/offline.geodatabase;polygon"/> -->
+<!--             <layer label="离线数据线图层" type="offline" visible="false" alpha="0.8" url="ArcGIS/offline/data/offline.geodatabase;polyline"/> -->
+        </operationallayers>
+    </map>
+    <widgetcontainer>
+        <widget label="图层"       classname="com.esri.android.viewer.widget.LayerSettingsWidget" icon="com.esri.android.viewer.widget.MapSettingsWidget.png" config=""/>
+        <widget label="书签"       classname="com.esri.android.viewer.widget.BookmarkWidget" icon="com.esri.android.viewer.widget.BookmarkWidget.png" config="BookmarkWidget.xml"/>
+        <widget label="资源查询"       classname="com.esri.android.viewer.widget.ResourceSearchWidget" icon="com.esri.android.viewer.widget.SearchWidget.png" config="ResourceSearchWidget.xml"/>
+        <widget label="图表"       classname="com.esri.android.viewer.widget.ChartsWidget" icon="com.esri.android.viewer.widget.SearchWidget.png" config=""/>
+        <widget label="Draw"       classname="com.esri.android.viewer.widget.DrawWidget" icon="com.esri.android.viewer.widget.SearchWidget.png" config=""/>
+    </widgetcontainer>
+</configuration>
